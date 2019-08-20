@@ -24,3 +24,5 @@ sonar_database_admin_username: ansible
 sonar_database_admin_password: supersecure
 
 sonar_python_library: python-psycopg2
+
+sonar_plugins: []
