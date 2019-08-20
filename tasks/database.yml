@@ -1,4 +1,9 @@
 ---
+- name: Ensure PostgreSQL Python libraries are installed.
+  apt:
+    name: "{{ sonar_python_library }}"
+    state: present
+
 - name: SonarQube PostgreSQL user
   postgresql_user:
     name: "{{ sonar_database_username }}"

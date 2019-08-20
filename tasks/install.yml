@@ -3,4 +3,5 @@
   user:
     name: sonarqube
     comment: SonarQube
+    shell: /bin/bash
 
