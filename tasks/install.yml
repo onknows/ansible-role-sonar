@@ -1,0 +1,6 @@
+---
+- name: Add SonarQube user
+  user:
+    name: sonarqube
+    comment: SonarQube
+
