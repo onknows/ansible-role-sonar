@@ -6,6 +6,7 @@
     owner: root
     group: root
     mode: 0755
+  notify: restart sonarqube  
   when: "ansible_service_mgr == 'systemd'" 
 
 - name: Ensure Sonar is running and set to start on boot.
