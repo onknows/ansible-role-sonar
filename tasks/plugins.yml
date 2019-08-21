@@ -1,5 +1,5 @@
 ---
-- name: Download plugin {{ item }}
+- name: Community plugins
   get_url:
     url: "{{ sonar_plugins[item].url }}"
     checksum: "sha256:{{ sonar_plugins[item].checksum }}"
