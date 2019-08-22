@@ -42,20 +42,6 @@
     owner: sonarqube    
   when: sonarqube_installed.stat.exists == false
 
-- name: Data dir owned by sonarqube
-  file:
-    path: "{{sonar_home}}/{{ sonar_version_directory }}/data"
-    group: sonarqube
-    owner: sonarqube
-    state: directory
-
-- name: Extensions dir owned by sonarqube
-  file:
-    path: "{{sonar_home}}/{{ sonar_version_directory }}/extensions"
-    group: sonarqube
-    owner: sonarqube
-    state: directory
-
 - name: Create symbolic link install
   file:
    src: "{{ sonar_home }}/{{ sonar_version_directory }}"
