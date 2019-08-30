@@ -8,7 +8,7 @@
   postgresql_user:
     name: "{{ sonar_database_username }}"
     password: "{{ sonar_database_password }}"
-    db: "{{ sonar_database_name }}"
+    db: "postgres"
     login_host: "{{ sonar_database_host }}"
     login_password: "{{ sonar_database_admin_password }}"
     login_user: "{{ sonar_database_admin_username }}"
