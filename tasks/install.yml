@@ -33,6 +33,11 @@
   notify: restart sonarqube
   when: sonarqube_installed.stat.exists == false
 
+- name: Unzip package
+  package:
+    name: unzip
+    state: present
+
 - name: Unzip
   unarchive:
     src: "/tmp/{{ sonar_version_directory }}.zip"
